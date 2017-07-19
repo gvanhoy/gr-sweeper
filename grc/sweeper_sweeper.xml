@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<block>
+  <name>Sweeper</name>
+  <key>sweeper_sweeper</key>
+  <category>[sweeper]</category>
+  <import>import sweeper</import>
+  <make>sweeper.sweeper($initial_freq, $step, $max_freq)</make>
+  <param>
+    <name>Initial Frequency</name>
+    <key>initial_freq</key>
+    <type>float</type>
+  </param>
+
+  <param>
+    <name>Step</name>
+    <key>step</key>
+    <type>float</type>
+  </param>
+
+  <param>
+    <name>Max Frequency</name>
+    <key>max_freq</key>
+    <type>float</type>
+  </param>
+
+  <sink>
+    <name>clock</name>
+    <type>message</type>
+  </sink>
+
+  <source>
+    <name>msg_out</name>
+    <type>message</type>
+  </source>
+</block>
