@@ -44,4 +44,4 @@ class sweeper_list(gr.sync_block):
             self.freq = self.freq_list[self.freq_index]
 
         self.freq_index += 1
-       self.message_port_pub(pmt.intern('freq_out'), pmt.cons(pmt.intern('freq'),pmt.to_pmt(self.freq)))
+        self.message_port_pub(pmt.intern('freq_out'), pmt.cons(pmt.intern('freq'),pmt.to_pmt(self.freq)))
