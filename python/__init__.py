@@ -32,4 +32,5 @@ except ImportError:
 
 # import any pure python here
 from sweeper import sweeper
+from sweeper_list import sweeper_list
 #

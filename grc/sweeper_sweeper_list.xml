@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<block>
+  <name>List Sweeper</name>
+  <key>sweeper_sweeper_list</key>
+  <category>sweeper</category>
+  <import>import sweeper</import>
+  <make>sweeper.sweeper_list($freq_list)</make>
+  <param>
+    <name>Frequency List</name>
+    <key>freq_list</key>
+    <type>float_vector</type>
+  </param>
+
+  <sink>
+    <name>change_freq</name>
+    <type>message</type>
+  </sink>
+
+  <source>
+    <name>freq_out</name>
+    <type>message</type>
+  </source>
+</block>

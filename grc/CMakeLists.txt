@@ -18,5 +18,6 @@
 # Boston, MA 02110-1301, USA.
 
 install(FILES
-    sweeper_sweeper.xml DESTINATION share/gnuradio/grc/blocks
+    sweeper_sweeper.xml
+    sweeper_sweeper_list.xml DESTINATION share/gnuradio/grc/blocks
 )

@@ -31,7 +31,8 @@ endif()
 GR_PYTHON_INSTALL(
     FILES
     __init__.py
-    sweeper.py DESTINATION ${GR_PYTHON_DIR}/sweeper
+    sweeper.py
+    sweeper_list.py DESTINATION ${GR_PYTHON_DIR}/sweeper
 )
 
 ########################################################################
@@ -42,3 +43,4 @@ include(GrTest)
 set(GR_TEST_TARGET_DEPS gnuradio-sweeper)
 set(GR_TEST_PYTHON_DIRS ${CMAKE_BINARY_DIR}/swig)
 GR_ADD_TEST(qa_sweeper ${PYTHON_EXECUTABLE} ${CMAKE_CURRENT_SOURCE_DIR}/qa_sweeper.py)
+GR_ADD_TEST(qa_sweeper_list ${PYTHON_EXECUTABLE} ${CMAKE_CURRENT_SOURCE_DIR}/qa_sweeper_list.py)
