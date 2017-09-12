@@ -41,6 +41,7 @@ class sweeper_list(gr.sync_block):
     def handler(self, pdu):
         if self.freq_index >= len(self.freq_list):
             self.freq = self.freq_list[0]
+            self.freq_index = 0
         else:
             self.freq = self.freq_list[self.freq_index]
 
