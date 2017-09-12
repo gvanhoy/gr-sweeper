@@ -21,6 +21,7 @@
 
 import numpy
 from gnuradio import gr
+import pmt
 
 class sweeper_list(gr.sync_block):
     """
